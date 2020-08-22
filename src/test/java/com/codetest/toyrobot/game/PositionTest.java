@@ -24,8 +24,8 @@ public class PositionTest {
 
     @Test
     public void testGetNewPosition_returnNewPosition() {
-        Position current = new Position(3,2);
-        Position offset = new Position(1,-1);
+        Position current = new Position(3, 2);
+        Position offset = new Position(1, -1);
         Position newPosition = current.getNewPosition(offset);
         assertEquals(4, newPosition.getX());
         assertEquals(1, newPosition.getY());
