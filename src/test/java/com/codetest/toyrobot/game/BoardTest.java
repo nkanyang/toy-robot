@@ -34,4 +34,6 @@ public class BoardTest {
         assertEquals(true,
                 board.isValidPosition(new Position(rows - 1, columns - 1)));
     }
+
+
 }

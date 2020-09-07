@@ -40,6 +40,8 @@ public class CommandParser {
                 }
                 return this.buildPlaceCommand(tempArr[1]);
             }
+            case "PLACE_OBJECT":
+                return new PlaceObjectCommand();
             default:
                 return null;
         }

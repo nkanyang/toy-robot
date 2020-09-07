@@ -25,4 +25,14 @@ public class Position {
     public String toString() {
         return this.x + "," + this.y;
     }
+
+    @Override
+    public boolean equals(Object position) {
+        if(position instanceof Position){
+            if((((Position) position).getX() == this.x && (((Position) position).getY() == this.y))){
+                return true;
+            }
+        }
+        return false;
+    }
 }
