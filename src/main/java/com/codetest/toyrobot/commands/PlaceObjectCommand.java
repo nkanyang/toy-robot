@@ -7,7 +7,7 @@ import com.codetest.toyrobot.game.Board;
 import com.codetest.toyrobot.game.Position;
 import com.codetest.toyrobot.game.Robot;
 
-public class PlaceObjectCommand implements Command{
+public class PlaceObjectCommand implements Command {
     private final String command = "PLACE_OBJECT";
 
     @Override

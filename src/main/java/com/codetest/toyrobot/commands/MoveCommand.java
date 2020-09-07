@@ -18,9 +18,9 @@ public class MoveCommand implements Command {
         }
         Position nextPosition = robot.getNextPosition();
         if (!board.isValidPosition(nextPosition)) {
-            if(!board.isOnTheBoard(nextPosition)) {
+            if (!board.isOnTheBoard(nextPosition)) {
                 throw new InvalidPositionException(command, nextPosition.toString());
-            }else {
+            } else {
                 throw new PositionOccupiedException(command, nextPosition.toString());
             }
         }

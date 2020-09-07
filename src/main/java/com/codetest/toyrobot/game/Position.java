@@ -28,10 +28,8 @@ public class Position {
 
     @Override
     public boolean equals(Object position) {
-        if(position instanceof Position){
-            if((((Position) position).getX() == this.x && (((Position) position).getY() == this.y))){
-                return true;
-            }
+        if (position instanceof Position) {
+            return ((Position) position).getX() == this.x && (((Position) position).getY() == this.y);
         }
         return false;
     }

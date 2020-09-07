@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Board {
     private final int rows;
     private final int columns;
-    private ArrayList<Position> obstacles = new ArrayList();
+    private final ArrayList<Position> obstacles = new ArrayList();
 
     public Board(int rows, int columns) {
         this.rows = rows;
@@ -18,10 +18,10 @@ public class Board {
         return this.isOnTheBoard(position) && !this.isOccupied(position);
     }
 
-    public boolean isOccupied(Position position){
-        for( int i=0; i < this.obstacles.size(); i++){
+    public boolean isOccupied(Position position) {
+        for (int i = 0; i < this.obstacles.size(); i++) {
             Position positionCurr = this.obstacles.get(i);
-            if(positionCurr.equals(position)){
+            if (positionCurr.equals(position)) {
                 return true;
             }
         }
