@@ -95,4 +95,6 @@ Use "--log" or "-l" option if you want to get log about how the simulator works
 2020-08-21 15:13:06 INFO  Game:20 - REPORT: Command executed successfully.
 ```
 
-
+<video id="video" controls="" preload="none">
+<source id="mp4" src="https://dev.azure.com/formationtechnology/member/_apis/git/repositories/automation/items?path=%2Fmedia%2Fmodels-sample-company-create.mp4" type="video/mp4">
+</video>
